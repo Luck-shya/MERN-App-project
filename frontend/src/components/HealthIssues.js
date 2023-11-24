@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import { Button, Box } from "@chakra-ui/react";
+import { Heading, Text, Image, Flex, Link } from "@chakra-ui/react";
 
 function HealthIssues() {
   const history = useHistory();
@@ -11,69 +12,277 @@ function HealthIssues() {
 
   return (
     <Box className="text-gray-600 body-font">
-      <Box className="container px-5 py-24 mx-auto">
-        <Box className="flex flex-col text-center w-full mb-20 bg-green-200 rounded-lg p-5">
-          <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 py-5">
+      <Box maxW="1800px" mx="auto">
+        {/* Header */}
+        <Box as="header" textAlign="center" py={8} mb={8}>
+          <Heading
+            as="h1"
+            fontSize="3xl"
+            fontWeight="bold"
+            color="black"
+            mb={4}
+          >
+            MENTAL HEALTH SUPPORT
+          </Heading>
+        </Box>
+      </Box>
+      <Box maxW="7xl" mx="auto" p={10}>
+        <Box textAlign="center" mb={20} bg="green.200" rounded="lg" p={5}>
+          <h1
+            fontSize={{ base: "2xl", sm: "3xl" }}
+            fontWeight="medium"
+            mb={4}
+            color="gray.900"
+            py={5}
+          >
             “Your mental health is just as important as your physical health.”
           </h1>
           <Button onClick={handleChatButtonClick} colorScheme="yellow">
-            Go to Home
+            Start Chat
           </Button>
         </Box>
-        <Box className="flex flex-wrap">
-          <Box className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 bg-blue-200 rounded-lg opacity-90">
-            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+        <Box display="flex" flexWrap="wrap">
+          <Box
+            flexBasis={{ base: "100%", md: "50%", xl: "25%" }}
+            p={6}
+            borderLeft="2px"
+            borderColor="gray.200"
+            bg="blue.200"
+            rounded="lg"
+            opacity="0.9"
+            mb={4}
+          >
+            <h2
+              fontSize={{ base: "lg", sm: "xl" }}
+              fontWeight="medium"
+              mb={2}
+              color="gray.900"
+            >
               Depression
             </h2>
-            <p className="leading-relaxed text-base mb-4">
+            <p fontSize="sm" lineHeight="tall" color="gray.900">
               What is depression basically? Depression is a mood disorder that
-              causes a persistent feeling of sadness and loss of interest. Also
-              called major depressive disorder or clinical depression, it
-              affects how you feel, think and behave and can lead to a variety
-              of emotional and physical problems.
+              causes a persistent feeling of sadness and loss of interest. It
+              affects how you feel, think, and handle daily activities. Symptoms
+              can vary and can include sadness, loss of interest, fatigue,
+              changes in appetite, and more.
             </p>
           </Box>
 
-          <Box className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 bg-blue-200 rounded-lg opacity-90">
-            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+          <Box
+            flexBasis={{ base: "100%", md: "50%", xl: "25%" }}
+            p={6}
+            borderLeft="2px"
+            borderColor="gray.200"
+            bg="blue.200"
+            rounded="lg"
+            opacity="0.9"
+            mb={4}
+          >
+            <h2
+              fontSize={{ base: "lg", sm: "xl" }}
+              fontWeight="medium"
+              mb={2}
+              color="gray.900"
+            >
               Anxiety Disorder
             </h2>
-            <p className="leading-relaxed text-base mb-4">
-              A mental health disorder characterized by feelings of worry,
-              anxiety or fear that are strong enough to interfere with one's
-              daily activities. Examples of anxiety disorders include panic
-              attacks, obsessive-compulsive disorder and post-traumatic stress
-              disorder.
+            <p fontSize="sm" lineHeight="tall" color="gray.900">
+              Anxiety disorders are characterized by intense, excessive, and
+              persistent worry and fear about everyday situations. They can
+              interfere significantly with daily activities, work, school, and
+              relationships. Symptoms may include rapid heart rate, sweating,
+              trembling, feelings of impending doom, and more.
             </p>
           </Box>
 
-          <Box className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 bg-blue-200 rounded-lg opacity-90">
-            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+          <Box
+            flexBasis={{ base: "100%", md: "50%", xl: "25%" }}
+            p={6}
+            borderLeft="2px"
+            borderColor="gray.200"
+            bg="blue.200"
+            rounded="lg"
+            opacity="0.9"
+            mb={4}
+          >
+            <h2
+              fontSize={{ base: "lg", sm: "xl" }}
+              fontWeight="medium"
+              mb={2}
+              color="gray.900"
+            >
               Stress
             </h2>
-            <p className="leading-relaxed text-base mb-4">
-              Stress can be defined as a state of worry or mental tension caused
-              by a difficult situation. Stress is a natural human response that
-              prompts us to address challenges and threats in our lives.
-              Everyone experiences stress to some degree.
+            <p fontSize="sm" lineHeight="tall" color="gray.900">
+              Stress is your body's reaction to a challenge or demand. It can
+              come from any event or thought that makes you feel frustrated,
+              angry, or nervous. While stress is a normal part of life,
+              excessive stress can lead to physical and mental health problems.
+              Symptoms may include headaches, insomnia, fatigue, and more.
             </p>
           </Box>
 
-          <Box className="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60 bg-blue-200 rounded-lg opacity-90">
-            <h2 className="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">
+          <Box
+            flexBasis={{ base: "100%", md: "50%", xl: "25%" }}
+            p={6}
+            borderLeft="2px"
+            borderColor="gray.200"
+            bg="blue.200"
+            rounded="lg"
+            opacity="0.9"
+            mb={4}
+          >
+            <h2
+              fontSize={{ base: "lg", sm: "xl" }}
+              fontWeight="medium"
+              mb={2}
+              color="gray.900"
+            >
               Post-Traumatic Stress Disorder
             </h2>
-            <p className="leading-relaxed text-base mb-4">
-              Post-traumatic stress disorder (PTSD) is a disorder that develops
-              in some people who have experienced a shocking, scary, or
-              dangerous event. It is natural to feel afraid during and after a
-              traumatic situation.
+            <p fontSize="sm" lineHeight="tall" color="gray.900">
+              PTSD is a mental health condition triggered by a terrifying event.
+              Symptoms may include flashbacks, nightmares, severe anxiety, and
+              uncontrollable thoughts about the event. It can affect anyone who
+              has experienced a traumatic event, and treatment often involves
+              therapy and medication.
             </p>
           </Box>
-
-          {/* You can add more Box components for additional health issues */}
+          {/* Add more Box components for additional health issues */}
         </Box>
       </Box>
+      <Flex flexDirection={{ base: "column", lg: "row" }} p={4} gap={8} mb={8}>
+        {/* Left Column */}
+        <Box flex="1">
+          {/* First Card */}
+          <Box
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            boxShadow="md"
+            bg={"white"}
+          >
+            <Image
+              src="https://www.priorygroup.com/media/597888/self_care_types_and_examples-min.jpg"
+              alt="Nature"
+            />
+            <Box p={4}>
+              <Heading as="h2" fontSize="xl" mb={4} fontWeight="bold">
+                Some methods to cure mental illness.
+              </Heading>
+              <Text fontSize="lg">
+                <strong>Seek Professional Help:</strong> If you or someone you
+                know is experiencing mental health challenges, it's essential to
+                consult with a mental health professional.
+                {/* Add more content */}
+              </Text>
+            </Box>
+          </Box>
+
+          {/* Second Card */}
+          <Box
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            boxShadow="md"
+            bg={"white"}
+            mt={8}
+          >
+            <Image
+              src="https://yourmentalhealthpal.com/wp-content/uploads/2023/02/Mental-health-self-care-activities.png"
+              alt="Norway"
+            />
+            <Box p={4}>
+              <Heading as="h2" fontSize="xl" mb={4} fontWeight="bold">
+                Awareness
+              </Heading>
+              <Text fontSize="lg">
+                Helps You Understand Your Mental Health Symptoms.
+                {/* Add more content */}
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+
+        {/* Right Column */}
+        <Box flex="1">
+          {/* Third Card */}
+          <Box
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            boxShadow="md"
+            bg={"white"}
+          >
+            <Image
+              src="https://www.drishtiias.com/images/uploads/1636458620_image6.jpg"
+              alt="India Mental Health Stats 2023"
+            />
+            <Box p={4}>
+              <Heading as="h2" fontSize="xl" mb={4} fontWeight="bold">
+                Mental Health Statistics in India 2023
+              </Heading>
+              <Text fontSize="lg">
+                Depressive symptoms grew from a base of about 193 million people
+                worldwide to 246 million, which is about 28%.
+                {/* Add more content */}
+              </Text>
+            </Box>
+          </Box>
+
+          {/* Slogans */}
+          <Box
+            borderWidth="1px"
+            borderRadius="lg"
+            overflow="hidden"
+            boxShadow="md"
+            bg={"white"}
+            mt={8}
+          >
+            <Box p={4}>
+              <Heading as="h2" fontSize="xl" mb={4} fontWeight="bold">
+                Popular Slogans
+              </Heading>
+              <Text fontSize="lg">
+                <Text mb={4}>
+                  <strong>
+                    "Your Mental Health Is a Precious Asset. Invest in
+                    Self-Care."
+                  </strong>
+                  <br />
+                  Invest in self-care because your mental health matters.
+                </Text>
+                <Text mb={4}>
+                  <strong>
+                    "Mental Health Is a Journey, Not a Destination; Let's Travel
+                    It Together."
+                  </strong>
+                  <br />
+                  Let's support each other on the mental health journey.
+                </Text>
+                <Text mb={4}>
+                  <strong>
+                    "The Sun Will Shine Again, Even on Your Darkest Days. Hold
+                    On."
+                  </strong>
+                  <br />
+                  Even during tough times, there's hope for brighter days.
+                </Text>
+                <Text>
+                  <strong>
+                    "Let's Rewrite the Story of Mental Health in 2023:
+                    Compassion, Understanding, and Hope."
+                  </strong>
+                  <br />
+                  Promoting compassion, understanding, and hope for mental
+                  health.
+                </Text>
+              </Text>
+            </Box>
+          </Box>
+        </Box>
+      </Flex>
     </Box>
   );
 }
